@@ -273,8 +273,6 @@ ul {
 
 .header-top-area {
   background: #f8f8f8 none repeat scroll 0 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .header-top {
@@ -287,6 +285,7 @@ ul {
 
     justify-content: space-between;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-top > ul > li:not(:last-child) {
@@ -315,7 +314,7 @@ ul {
   position: relative;
 }
 .header-bottom-list li > a i {
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .header-top ul > li > a,.header-top ul > li> span {
@@ -669,7 +668,7 @@ span.total-pro {
 /* header bottom dropdown menu css start */
 .header-bottom-list > li > a,
 .header-bottom-list > li > ul.ht-dropdown li a {
-    color: #333333;
+    color: #ffffff;
     display: block;
     font-size: 15px;
     font-weight: 700;
@@ -695,12 +694,13 @@ span.total-pro {
     width: 200px;
 }
 .header-bottom-list > li > a {
-  padding: 10px 30px 10px 0;
+  /* padding: 10px 30px 10px 0; */
 }
 /* header bottom dropdown menu css end */
 .header-bottom-list > li.active > a,.home-4 .header-bottom-list > li.active > a,
 .header-bottom-list > li:hover > a,.home-4 .header-bottom-list > li:hover > a {
-    color: orangered;
+    color: white;
+    background-color:rgb(255, 68, 0) ;
 }
 
 .mean-container .mean-bar {
@@ -768,7 +768,7 @@ span.total-pro {
 }
 .header-bottom.header-sticky {
   border-bottom: 1px solid #ebebeb;
-  border-top: 1px solid #ebebeb;
+  /* border-top: 1px solid #ebebeb; */
 }
 .vertical-menu-list {
     background: #fff none repeat scroll 0 0;
@@ -1946,7 +1946,7 @@ li.megamenu-img a {
   padding-left: 0;
   position: static;
   transform: scale(1);
-}}
+}
 .hot-product2 .actions-primary a {
   transform: scale(1);
   width: 163px;

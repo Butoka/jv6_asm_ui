@@ -22476,7 +22476,7 @@ dl li {
   font-size: 1.125rem;
   line-height: 1;
   margin-right: 1.125rem;
-  color: inherit;
+  color: orangered;
 }
 
 .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
@@ -22549,9 +22549,15 @@ dl li {
 .sidebar .nav .nav-item.active > .nav-link i,
 .sidebar .nav .nav-item.active > .nav-link .menu-title,
 .sidebar .nav .nav-item.active > .nav-link .menu-arrow {
-  color: orangered;
+  color: white;
 }
-
+.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link .menu-arrow {
+  color:white;
+}
+.sidebar .nav .nav-item.active{
+  background-color: orangered;
+  color:white;
+}
 .sidebar .nav:not(.sub-menu) {
   margin-top: .3rem;
 }
@@ -22565,9 +22571,14 @@ dl li {
   margin: 0;
 }
 
-.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
+.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link,
+.sidebar .nav .nav-item:hover .nav-link i.menu-icon
+{
   background: transparent;
-  color: orangered;
+  color: white;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover {
+  background-color: orangered;
 }
 
 .sidebar .nav.sub-menu {
@@ -22575,6 +22586,7 @@ dl li {
   margin-top: 0;
   list-style: none;
   padding: 0.25rem 0 0.6rem 3.55rem;
+  background-color: white;
 }
 
 .sidebar .nav.sub-menu .nav-item {
@@ -22602,11 +22614,11 @@ dl li {
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link:hover {
-  color: #000000;
+  color: orangered;
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link.active {
-  color: #000000;
+  color:  orangered;
   background: transparent;
 }
 

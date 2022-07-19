@@ -208,18 +208,37 @@
       <div class="main-panel">
         <div class="content-wrapper">
           
+          <!--  -->
+          <div class="row pt-3 ps-2" style="background-color: white;">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html"
+                    style="text-decoration: none;color: orangered;">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#" style="text-decoration: none;color: orangered;">Người dùng</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page"><strong>Danh sách tài khoản</strong></li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Breadcrumb end-->
+          <div class="row mt-2">
+            <div class="card" style="height: 80px;">
+              <div class="card-body p-3 text-end">
+                <a href="../color-manager/color-form.html" class="btn btn-success btn-rounded text-white">
+                  <div class="d-flex">
+                    <i class="mdi mdi-plus-circle"></i>
+                    <strong class="mt-1 ms-1">Thêm tài khoản</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
 
       <!-- Thân -->
-      <div class="row">
-        <div class="col-md-12 stretch-card">
+      <div class="row mt-2">
           <div class="card">
             <div class="card-body">
-
-              <button type="button" class="btn btn-success btn-icon-text" style="float: right;"> 
-                <i class="mdi mdi-plus-circle-outline"></i>                                                    
-                Thêm mới
-              </button>
-
               <p class="card-title">Danh sách tài khoản</p>
               <div class="table-responsive">
                 <table class="table">
@@ -239,7 +258,17 @@
                       <td>Huỳnh Văn Đạt</td>
                       <td>dat@gmail.com</td>
                       <td>0988888888</td>
-                      <td><button class="btn-inverse-primary">Edit</button></td>
+                      <td>
+                        <a href="../brand-manager/brand-form.html"
+                          class="col-3 btn btn-primary btn-rounded text-white d-flex justify-content-center"
+                          style="float: left;">
+                          <i class="mdi mdi-pencil"></i>
+                        </a>
+                        <button class="col-3 btn btn-danger btn-rounded text-white d-flex justify-content-center"
+                          data-bs-toggle="modal" data-bs-target="#modalDelete">
+                          <i class="mdi mdi-close-circle-outline"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
                       <td>dathv</td>
@@ -247,7 +276,17 @@
                       <td>Huỳnh Văn Đạt</td>
                       <td>dat@gmail.com</td>
                       <td>0988888888</td>
-                      <td><button class="btn-inverse-primary">Edit</button></td>
+                      <td>
+                        <a href="../brand-manager/brand-form.html"
+                          class="col-3 btn btn-primary btn-rounded text-white d-flex justify-content-center"
+                          style="float: left;">
+                          <i class="mdi mdi-pencil"></i>
+                        </a>
+                        <button class="col-3 btn btn-danger btn-rounded text-white d-flex justify-content-center"
+                          data-bs-toggle="modal" data-bs-target="#modalDelete">
+                          <i class="mdi mdi-close-circle-outline"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
                       <td>dathv</td>
@@ -255,14 +294,23 @@
                       <td>Huỳnh Văn Đạt</td>
                       <td>dat@gmail.com</td>
                       <td>0988888888</td>
-                      <td><button class="btn-inverse-primary">Edit</button></td>
+                      <td>
+                        <a href="../brand-manager/brand-form.html"
+                          class="col-3 btn btn-primary btn-rounded text-white d-flex justify-content-center"
+                          style="float: left;">
+                          <i class="mdi mdi-pencil"></i>
+                        </a>
+                        <button class="col-3 btn btn-danger btn-rounded text-white d-flex justify-content-center"
+                          data-bs-toggle="modal" data-bs-target="#modalDelete">
+                          <i class="mdi mdi-close-circle-outline"></i>
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div>
       </div>
       <!-- thân end -->
 

@@ -207,11 +207,35 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-          
+          <!--  -->
+          <div class="row pt-3 ps-2" style="background-color: white;">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html"
+                    style="text-decoration: none;color: orangered;">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#" style="text-decoration: none;color: orangered;">Sản phẩm</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page"><strong>Danh sách sản phẩm</strong></li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Breadcrumb end-->
+          <div class="row mt-2">
+            <div class="card" style="height: 80px;">
+              <div class="card-body p-3 text-end">
+                    <a href="../color-manager/color-list.html" class="btn btn-danger btn-rounded text-white">
+                      <div class="d-flex">
+                        <i class="mdi mdi-format-list-bulleted-type"></i>
+                        <strong class="mt-1 ms-1"> Danh sách sản phẩm</strong>
+                      </div>
+                    </a>
+              </div>
+            </div>
+         </div>
+          <!--  -->
 
 <!-- thân -->
-
-      <div class="col-12 grid-margin">
+      <div class="row mt-2">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">CẬP NHẬT SẢN PHẨM</h4>
@@ -220,128 +244,150 @@
                 Lưu ý: Những trường (*) là bắt buộc.
               </p>
               <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Tên sản phẩm (*)</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Trạng thái (*)</label>
-                    <div class="col-sm-4">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
-                          Còn hàng
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-sm-5">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
-                          Hết hàng
-                        </label>
+                <div class="col-6">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Tên sản phẩm (*)</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
                       </div>
                     </div>
                   </div>
+                  
+  
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Giá sản phẩm (*)</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  
+  
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Số lượng (*)</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Giảm giá (*)</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>10%</option>
+                          <option>20%</option>
+                          <option>30%</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Xuất xứ (*)</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+              
+               
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Ghi chú (*)</label>
+                      <div class="col-sm-9">
+                        <textarea class="form-control" rows="7" >
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-6">
+                  <div class="col-12 text-center">
+                    <img src="../../images/images_xedap/Xe Đạp Đua Địa Hình MTB GIANT ATX 660 – Phanh Đĩa, Bánh 26 Inches – 2022.jpg" class="img-fluid" style="width:250px;">
+                    <p class="text-danger"><em>* Hình ảnh logo thương hiệu</em></p>
+                    <label class="btn btn-danger text-white ">
+                      Chọn hình <input type="file" hidden>
+                  </label>
+                  </div>
+
+                  <div class="col-md-12 mt-3">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Danh mục (*)</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>Xe đạp thể thao</option>
+                          <option>Xe đạp địa hình</option>
+                          <option>Xe đạp vv...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Thương hiệu (*)</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>ABC</option>
+                          <option>DEF</option>
+                          <option>KHKLLJ</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Trạng thái (*)</label>
+                      <div class="col-sm-4">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                            Còn hàng
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                            Hết hàng
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Giá sản phẩm (*)</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" />
+              <div class="col-12 text-end">
+                <button class="btn btn-inverse-success btn-fw">
+                    <div class="d-flex">
+                      <i class="mdi mdi-plus-circle"></i>
+                      <strong class="mt-1 ms-1 h6">Thêm mới</strong>
                     </div>
+                </button>
+                <button class="btn btn-inverse-primary btn-fw">
+                  <div class="d-flex">
+                    <i class="mdi mdi-content-save"></i>
+                    <strong class="mt-1 ms-1 h6">Cập nhật</strong>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Thương hiệu (*)</label>
-                    <div class="col-sm-9">
-                      <select class="form-control">
-                        <option>ABC</option>
-                        <option>DEF</option>
-                        <option>KHKLLJ</option>
-                      </select>
-                    </div>
+                </button>
+                <button class="btn btn-inverse-warning btn-fw">
+                  <div class="d-flex">
+                    <i class="mdi mdi-refresh"></i>
+                    <strong class="mt-1 ms-1 h6">Làm mới</strong>
                   </div>
-                </div>
-              </div>
+                </button>
+               </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Số lượng (*)</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Giảm giá (*)</label>
-                    <div class="col-sm-9">
-                      <select class="form-control">
-                        <option>10%</option>
-                        <option>20%</option>
-                        <option>30%</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Ngày tạo (*)</label>
-                    <div class="col-sm-9">
-                      <input type="date" class="form-control" placeholder="dd/mm/yyyy"/>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Xuất xứ (*)</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Ghi chú (*)</label>
-                    <div class="col-sm-9">
-                      <textarea class="form-control" rows="7" >
-                      </textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Hình ảnh (*)</label>
-                    <div class="col-sm-9">
-                      
-                      <img src="../../images/2.png" alt="" style="height:150px ; width:150px ;">
-                      <input type="file" class="form-control">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="btn btn-inverse-success btn-fw">Thêm</button>
-              <button class="btn btn-inverse-warning btn-fw">Cập nhật</button>
-              <button class="btn btn-inverse-danger btn-fw">Xóa</button>
-              <button class="btn btn-inverse-primary btn-fw">Làm mới</button>
             </form>
           </div>
         </div>

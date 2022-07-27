@@ -22126,7 +22126,7 @@ dl li {
 .table td {
   vertical-align: middle;
   line-height: 1;
-  padding: 1.25rem 0.9375rem;
+  /* padding: 1.25rem 0.9375rem; */
 }
 
 .table td {

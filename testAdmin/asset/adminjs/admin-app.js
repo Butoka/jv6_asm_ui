@@ -22,6 +22,10 @@ app.config(function($routeProvider){
         templateUrl: "/page/product-manager/product-list.html",
         controller: "product-list"
     })
+    .when("/product-category",{
+        templateUrl: "/page/product-manager/product-category.html",
+        controller: "product-category"
+    })
     .when("/category-form",{
         templateUrl: "/page/category-manager/category-form.html",
         controller: "category-form"
@@ -32,11 +36,15 @@ app.config(function($routeProvider){
     })
     .when("/color-form",{
         templateUrl: "/page/color-manager/color-form.html",
-        controller: "category-list"
+        controller: "color-form"
     })
     .when("/color-list",{
         templateUrl: "/page/color-manager/color-list.html",
-        controller: "category-list"
+        controller: "color-list"
+    })
+    .when("/color-update",{
+        templateUrl: "/page/color-manager/color-update.html",
+        controller: "color-update"
     })
     .when("/sale-form",{
         templateUrl: "/page/sale-manager/sale-form.html",
@@ -76,15 +84,15 @@ app.config(function($routeProvider){
     })
     .when("/report-order",{
         templateUrl: "/page/report-manager/report-order.html",
-        controller: "order-done"
+        controller: "report-order"
     })
     .when("/report-favorite",{
         templateUrl: "/page/report-manager/report-favorite.html",
-        controller: "order-done"
+        controller: "report-favorite"
     })
     .when("/report-customer",{
         templateUrl: "/page/report-manager/report-customer.html",
-        controller: "order-done"
+        controller: "report-customer"
     })
     .otherwise({
         template:"<h1 class='text-center'>Home page</h1>"

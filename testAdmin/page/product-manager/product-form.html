@@ -140,21 +140,20 @@
                 <div class="col-md-12">
                   <div class="form-group row">
                     <label class="col-sm-3 col-form-label">(<strong class="text-danger">*</strong>) Trạng thái:</label>
-                    <div class="col-sm-4">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
-                          Còn hàng
-                        </label>
+                    <div class="col-9 d-flex">
+                      <div class="form-check form-check-inline">
+                        <input class="ms-2 form-check-input" type="radio" name="available"
+                          id="inlineRadio4" value="true">
+                        <label class="form-check-label" for="inlineRadio4"
+                          style="font-size: 15px;">Kinh doanh</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="ms-2 form-check-input" type="radio" name="available"
+                          id="inlineRadio3" value="false">
+                        <label class="form-check-label" for="inlineRadio3"
+                          style="font-size: 15px;">Ngừng kinh doanh</label>
                       </div>
                     </div>
-                    <div class="col-sm-5">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
-                          Hết hàng
-                        </label>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -187,6 +186,5 @@
       </div>
 
     </div>
-
 <!-- thân end -->
 </body>

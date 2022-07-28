@@ -8,3 +8,8 @@ app.controller("product-list",function($scope,$http){
         $scope.page.setTitle(current.$$route.title || ' Danh sách sản phẩm');
     });
 });
+app.controller("product-category",function($scope,$http){
+    $scope.$on('$routeChangeSuccess', function(event, current, previous) {
+        $scope.page.setTitle(current.$$route.title || ' Update Danh Mục');
+    });
+});

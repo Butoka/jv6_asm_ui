@@ -18,6 +18,74 @@ app.config(function($routeProvider){
         templateUrl: "/page/product-manager/product-form.html",
         controller: "product-form"
     })
+    .when("/product-list",{
+        templateUrl: "/page/product-manager/product-list.html",
+        controller: "product-list"
+    })
+    .when("/category-form",{
+        templateUrl: "/page/category-manager/category-form.html",
+        controller: "category-form"
+    })
+    .when("/category-list",{
+        templateUrl: "/page/category-manager/category-list.html",
+        controller: "category-list"
+    })
+    .when("/color-form",{
+        templateUrl: "/page/color-manager/color-form.html",
+        controller: "category-list"
+    })
+    .when("/color-list",{
+        templateUrl: "/page/color-manager/color-list.html",
+        controller: "category-list"
+    })
+    .when("/sale-form",{
+        templateUrl: "/page/sale-manager/sale-form.html",
+        controller: "sale-form"
+    })
+    .when("/sale-list",{
+        templateUrl: "/page/sale-manager/sale-list.html",
+        controller: "sale-list"
+    })
+    .when("/brand-form",{
+        templateUrl: "/page/brand-manager/brand-form.html",
+        controller: "brand-form"
+    })
+    .when("/brand-list",{
+        templateUrl: "/page/brand-manager/brand-list.html",
+        controller: "brand-list"
+    })
+    .when("/order-cancel",{
+        templateUrl: "/page/order-manager/order-cancel.html",
+        controller: "order-cancel"
+    })
+    .when("/order-delivered",{
+        templateUrl: "/page/order-manager/order-delivered.html",
+        controller: "order-delivered"
+    })
+    .when("/order-wait",{
+        templateUrl: "/page/order-manager/order-wait.html",
+        controller: "order-wait"
+    })
+    .when("/order-done",{
+        templateUrl: "/page/order-manager/order-done.html",
+        controller: "order-done"
+    })
+    .when("/historysale",{
+        templateUrl: "/page/history-sale/historysale.html",
+        controller: "historysale"
+    })
+    .when("/report-order",{
+        templateUrl: "/page/report-manager/report-order.html",
+        controller: "order-done"
+    })
+    .when("/report-favorite",{
+        templateUrl: "/page/report-manager/report-favorite.html",
+        controller: "order-done"
+    })
+    .when("/report-customer",{
+        templateUrl: "/page/report-manager/report-customer.html",
+        controller: "order-done"
+    })
     .otherwise({
         template:"<h1 class='text-center'>Home page</h1>"
     })

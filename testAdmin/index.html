@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="admin-app">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>DTNsBike | Trang quản trị</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="../../asset/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../asset/vendors/base/vendor.bundle.base.css">
+  <link rel="stylesheet" href="/asset/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/asset/vendors/base/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- plugin css for this page -->
-  <link rel="stylesheet" href="../../asset/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="/asset/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="../../asset/css/style.css">
+  <link rel="stylesheet" href="/asset/css/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../asset/images/favicon.png" />
+  <link rel="shortcut icon" href="/asset/images/favicon.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <title data-ng-bind="page.title"></title>
 </head>
-<body ng-app="admin-app">
+<body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a style="width: 200px;height: 100px;" class="navbar-brand brand-logo" href="/index.html"><img class="img-fluid w-100 h-100" src="../../asset/images/favicon2.png" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="/index.html"><img src="../../asset/images/favicon.png" alt="logo"/></a>
+          <a style="width: 200px;height: 100px;" class="navbar-brand brand-logo" href="/index.html"><img class="img-fluid w-100 h-100" src="/asset/images/favicon2.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="/index.html"><img src="/asset/images/favicon.png" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
@@ -49,8 +49,8 @@
         <ul class="navbar-nav navbar-nav-right">
           <!-- Profile Admin -->
           <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" href="../../asset/#" data-bs-toggle="dropdown" id="profileDropdown">
-              <img src="../../asset/images/faces/face5.jpg" alt="profile"/>
+            <a class="nav-link dropdown-toggle" href="/asset/#" data-bs-toggle="dropdown" id="profileDropdown">
+              <img src="/asset/images/faces/face5.jpg" alt="profile"/>
               <span class="nav-profile-name">Xin chào, thanhfuck@123</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
@@ -83,7 +83,7 @@
           </li>
           <!-- Account Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#account" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#account" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-account menu-icon"></i>
               <span class="menu-title">Người dùng</span>
               <i class="menu-arrow"></i>
@@ -97,7 +97,7 @@
           </li>
           <!-- Product Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#product" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#product" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-bike menu-icon"></i>
               <span class="menu-title">Sản phẩm</span>
               <i class="menu-arrow"></i>
@@ -112,7 +112,7 @@
           </li>
           <!-- Category Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#category" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#category" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-archive menu-icon"></i>
               <span class="menu-title">Danh mục</span>
               <i class="menu-arrow"></i>
@@ -126,7 +126,7 @@
           </li>
           <!-- Color Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#color" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#color" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-format-color-fill menu-icon"></i>
               <span class="menu-title">Màu sắc</span>
               <i class="menu-arrow"></i>
@@ -141,7 +141,7 @@
           </li>
           <!-- Sale Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#sale" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#sale" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-sale menu-icon"></i>
               <span class="menu-title">Giảm giá</span>
               <i class="menu-arrow"></i>
@@ -155,7 +155,7 @@
           </li>
           <!-- Brand Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#brand" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#brand" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-tag-multiple menu-icon"></i>
               <span class="menu-title">Thương hiệu</span>
               <i class="menu-arrow"></i>
@@ -169,7 +169,7 @@
           </li>
           <!-- Order Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#order" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#order" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-cart menu-icon"></i>
               <span class="menu-title">Đơn hàng</span>
               <i class="menu-arrow"></i>
@@ -192,7 +192,7 @@
           </li>
           <!-- Report Manager -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="../../asset/#report" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="/asset/#report" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-cart menu-icon"></i>
               <span class="menu-title">Tổng hợp - Thống kê</span>
               <i class="menu-arrow"></i>
@@ -210,7 +210,7 @@
       <!-- partial -->
       <div class="main-panel">
         <!-- View Start -->
-         <div class="ng-view"></div>
+         <div class="ng-view content-wrapper"></div>
         <!-- View End -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer" style="background-color: rgb(255, 255, 255);color: orangered;">

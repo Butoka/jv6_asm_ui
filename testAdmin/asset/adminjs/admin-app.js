@@ -13,7 +13,12 @@ app.config(function($routeProvider){
     .when("/account-list",{
         templateUrl: "/page/account-manager/account-list.html",
         controller: "account-list"
-    }).otherwise({
+    })
+    .when("/product-form",{
+        templateUrl: "/page/product-manager/product-form.html",
+        controller: "product-form"
+    })
+    .otherwise({
         template:"<h1 class='text-center'>Home page</h1>"
     })
 });
